@@ -1,6 +1,7 @@
 package com.example.tetest.ui;
 
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 
@@ -25,6 +26,10 @@ public class ImageViewHolder extends RecyclerView.ViewHolder {
     }
 
     public void loadImage(String url) {
-        Picasso.with(itemView.getContext()).load(url).into(mImageView);
+        Log.d("IVHTEST", "load image " + url);
+        Picasso.with(itemView.getContext())
+                .load(url)
+                .error(R.drawable.imeage_load_error_placeholder)
+                .into(mImageView);
     }
 }

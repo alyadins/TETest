@@ -6,6 +6,6 @@
     <string name="search">Search</string>
     <string name="enter_your_url">Enter your URL</string>
     <string name="scan">Scan</string>
-    <string name="error_loading_page">Check your url please</string>
+    <string name="error_loading_page">Maybe url broken?</string>
     <string name="images_not_found">Images not found</string>
 </resources>
